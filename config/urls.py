@@ -11,5 +11,5 @@ def hello(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('intro/', include('intro.urls')),
-    path('czesc/', HELLO),
+    path('', include('intro.urls')),
 ]
